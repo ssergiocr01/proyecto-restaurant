@@ -12,7 +12,11 @@ git clone https://github.com/alexanderbenavides/proyecto-restaurant.git
 
 ### `Navegar hacia proyecto-restaurant`
 
+Para navegar simplemente poner : cd proyecto-restaurant
+
 una vez ahí ejecutar : npm install
+
+
 Se espera un momento hasta que instale las dependencias npm
 
 Finalmente ejecutar : npm start y ya es todo
