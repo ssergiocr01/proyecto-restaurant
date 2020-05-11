@@ -1,0 +1,28 @@
+.search-bar {
+  background-image: url(../../assets/restaurant/background_search_desktop.jpg);
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  width: 260px;
+}
+
+.search-bar button {
+  background-color: #cca353;
+  border: 0;
+  outline: 0;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

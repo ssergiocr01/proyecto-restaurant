@@ -1,0 +1,39 @@
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 3rem 6rem;
+  gap: 1rem;
+}
+
+.restaurant-list img {
+  width: 100%;
+}
+
+.restaurant-list h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.restaurant-list .info-restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-list .info-restaurant section {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-list .info-restaurant section:nth-last-of-type(1) span {
+  text-align: right;
+}
+
+.restaurant-list .info-restaurant section span {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.restaurant-list .info-restaurant section span.bold-info {
+  color: #cca353;
+  font-weight: bold;
+}
