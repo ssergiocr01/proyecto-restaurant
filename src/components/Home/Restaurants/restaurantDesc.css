@@ -1,0 +1,11 @@
+.restaurant-description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.restaurant-description div {
+  border: 1px solid #f2f2f2;
+  padding: 1rem;
+}

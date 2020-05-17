@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Restaurant(props) {
   const { dataRestaurant } = props;
   return (
-    <div className="restaurant">
+    <Link className="restaurant" to="/restaurant-description">
       <img src={dataRestaurant.imageSrc} />
       <h2>{dataRestaurant.name}</h2>
       <div className="info-restaurant">
@@ -20,6 +20,6 @@ export default function Restaurant(props) {
           <span>{dataRestaurant.reviewCount} comentarios</span>
         </section>
       </div>
-    </div>
+    </Link>
   );
 }
