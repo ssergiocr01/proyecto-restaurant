@@ -7,7 +7,7 @@ import RestDescription from "../Views/Home/RestaurantDescription";
 
 // Vistas de las páginas del admin
 import AdminPage from "../Views/Admin";
-
+import RestDescriptionAdmin from "../Views/Admin/RestaurantDescription";
 // Página de error
 import ErrorPage from "../Views/Error";
 
@@ -20,6 +20,11 @@ const routes = [
       {
         path: "/admin",
         component: AdminPage,
+        exact: true,
+      },
+      {
+        path: "/admin/detail",
+        component: RestDescriptionAdmin,
         exact: true,
       },
       {

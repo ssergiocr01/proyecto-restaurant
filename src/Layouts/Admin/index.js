@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import HeaderAdmin from "../../components/Header";
+import Drawer from "../../components/Admin/Drawer";
 class LayoutHome extends React.Component {
   constructor(props) {
     super(props);
@@ -13,16 +14,23 @@ class LayoutHome extends React.Component {
     return (
       <>
         <HeaderAdmin />
-        <Switch>
-          {routes.map((route, key) => (
-            <Route
-              key={key}
-              path={route.path}
-              exact={route.exact}
-              component={route.component}
-            ></Route>
-          ))}
-        </Switch>
+        <section className="index-admin">
+          <div className="layout-admin">
+            <Drawer />
+          </div>
+          <div className="layout-admin">
+            <Switch>
+              {routes.map((route, key) => (
+                <Route
+                  key={key}
+                  path={route.path}
+                  exact={route.exact}
+                  component={route.component}
+                ></Route>
+              ))}
+            </Switch>
+          </div>
+        </section>
       </>
     );
   }
